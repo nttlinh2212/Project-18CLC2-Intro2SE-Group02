@@ -2,7 +2,7 @@ body{
     width: 100%;
     margin: 0 auto;
     font-family: Verdana,Arial,sans-serif;
-    background-color: #fff;
+    
 }
 header{
     width: 100%;
@@ -12,9 +12,11 @@ header{
 }
 .content-menu-head-top{
     float: right;
+    margin-top: 10px;
 }
 .content-menu-head-top ul,.menu-items>ul{
     list-style-type: none;
+    margin: 0 auto;
 }
 .content-menu-head-top ul li{
     float: right;
@@ -27,7 +29,7 @@ nav{
     clear: both;
     background-color: #ffb400;
     line-height: 73px;
-    line-height: 73px;
+    height: 73px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -62,6 +64,7 @@ nav .menu-buttons button{
     margin-left: 25px;
     padding: 10px 25px;
 }
+
 nav .menu-buttons .btn-contact{
     background-color: transparent;
     border-color: #1a363c;
@@ -70,4 +73,34 @@ nav .menu-buttons .btn-contact{
 nav .menu-buttons .btn-book{
     background-color: #e71a0f;
     border-color: #e71a0f;
+}
+footer{
+    clear: both;
+    width: 100%;
+    height: 250px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: normal;
+    background-color:grey;
+}
+footer .introduce,.terms{
+    float: left;
+    margin: 0 20px;
+}
+footer .follow-us,.customer-service{
+    float: right;
+    margin: 0 20px;
+}
+footer>div>ul{
+    list-style-type: none;
+}
+footer>div>ul>li>a{
+    text-decoration: none;
+}
+footer .follow-us img{
+    height: 30px;
+}
+footer div ul{
+    margin-left: -30px;
 }
