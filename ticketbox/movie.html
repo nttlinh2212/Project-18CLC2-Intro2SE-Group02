@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films</title>
+    <title>Movies</title>
+    <link rel="icon" type="image/png" href="imgs/film_logo_1.png">
     <link rel="stylesheet" href="css/movie.css">
     <link rel="stylesheet" href="css/site.css" type="text/css">
 </head>
@@ -56,62 +57,119 @@
         <img src="imgs/filmposters/poster.jpg" class="FilmPoster" id="topposter" width=100%>
         <!--Tabs button: now showing/coming soon-->
         <div class="tabfilms">
-            <button class="tablinks">Now Showing</button>
-            <button class="tablinks">Coming Soon</button>
+            <button class="tablinks" onclick="openTabs(event, 'nowshowing')" id="default">Now Showing</button>
+            <button class="tablinks" onclick="openTabs(event, 'comingsoon')">Coming Soon</button>
         </div>
         <!-- List of now showing movies -->
         <div id="nowshowing" class="tabcontent">
             <ul id="listmovie" class="lstnowshowing">
                 <li>
-                    <img src="imgs/filmposters/tiectrangmau.jpg">
+                    <img src="imgs/filmposters/tiectrangmau.jpg" alt="TIEC TRANG MAU">
+                    <span class="moviegrade moviegrade18">C18</span>
                     <dl class="movieshortinfo">
-                        <dt><a href="" class="moviename">TIEC TRANG MAU <img src="imgs/gradelogo/bg_grade_18.png"></a></dt>
+                        <dt><a href="" class="moviename" title="TIEC TRANG MAU">TIEC TRANG MAU</a></dt>
                         <dd><b>Genre:</b> Comedy, Drama</dd>
                         <dd><b>Running Time:</b> 118 Mins</dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="imgs/filmposters/cucnohoacuccung.jpg">
+                    <img src="imgs/filmposters/cucnohoacuccung.jpg" alt="PAWN">
                     <dl class="movieshortinfo">
-                        <dt><a href="" class="moviename">PAWN <img src="imgs/gradelogo/bg_grade_all2.png"></a></dt>
+                        <dt><a href="" class="moviename" title="PAWN">PAWN</a></dt>
                         <dd><b>Genre:</b> Comedy, Drama</dd>
                         <dd><b>Running Time:</b> 118 Mins</dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="imgs/filmposters/phuthuyphuthuy.gif">
+                    <img src="imgs/filmposters/phuthuyphuthuy.gif" alt="THE WITCHES">
                     <dl class="movieshortinfo">
-                        <dt><a href="" class="moviename">THE WITCHES <img src="imgs/gradelogo/bg_grade_all2.png"></a></dt>
+                        <dt><a href="" class="moviename" title="THE WITCHES">THE WITCHES</a></dt>
                         <dd><b>Genre:</b> Adventure, Comedy, Family</dd>
                         <dd><b>Running Time:</b> 118 Mins</dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="imgs/filmposters/rom.jpg">
+                    <img src="imgs/filmposters/rom.jpg" alt="ROM">
+                    <span class="moviegrade moviegrade18">C18</span>
                     <dl class="movieshortinfo">
-                        <dt><a href="" class="moviename">ROM <img src="imgs/gradelogo/bg_grade_18.png"></a></dt>
+                        <dt><a href="" class="moviename" title="ROM">ROM</a></dt>
                         <dd><b>Genre:</b> Action, Thriller</dd>
                         <dd><b>Running Time:</b> 118 Mins</dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="imgs/filmposters/doraemon.jpg">
+                    <img src="imgs/filmposters/doraemon.jpg" alt="DORAEMON THE MOVIE 2020: NOBITA'S NEW DINOSAUR">
                     <dl class="movieshortinfo">
-                        <dt><a href="" class="moviename">DORAEMON <img src="imgs/gradelogo/bg_grade_all2.png"></a></dt>
+                        <dt><a href="" class="moviename" title="DORAEMON THE MOVIE 2020: NOBITA'S NEW DINOSAUR">DORAEMON THE MOVIE 2020: NOBITA'S NEW DINOSAUR</a></dt>
                         <dd><b>Genre:</b> Animation</dd>
                         <dd><b>Running Time:</b> 118 Mins</dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="imgs/filmposters/tihonhaudau.jpg">
+                    <img src="imgs/filmposters/tihonhaudau.jpg" alt="THE ELFKINS">
                     <dl class="movieshortinfo">
-                        <dt><a href="" class="moviename">THE ELFKINS <img src="imgs/gradelogo/bg_grade_all2.png"></a></dt>
+                        <dt><a href="" class="moviename" title="THE ELFKINS">THE ELFKINS</a></dt>
                         <dd><b>Genre:</b> Animation</dd>
                         <dd><b>Running Time:</b> 118 Mins</dd>
                     </dl>
                 </li>
             </ul>
         </div>
+        <div id="comingsoon" class="tabcontent">
+            <ul id="listmovie" class="lstnowshowing">
+                <li>
+                    <img src="imgs/filmposters/nguoicanquenphainho.jpg" alt="NGUOI CAN QUEN PHAI NHO">
+                    <dl class="movieshortinfo">
+                        <dt><a href="" class="moviename" title="NGUOI CAN QUEN PHAI NHO">NGUOI CAN QUEN PHAI NHO</a></dt>
+                        <dd><b>Genre:</b> Comedy, Drama</dd>
+                        <dd><b>Running Time:</b> 118 Mins</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="imgs/filmposters/phicongsieudang.jpg" alt="TOP GUN MAVERICK">
+                    <dl class="movieshortinfo">
+                        <dt><a href="" class="moviename" title="TOP GUN MAVERICK">TOP GUN MAVERICK</a></dt>
+                        <dd><b>Genre:</b> Action</dd>
+                        <dd><b>Running Time:</b> 118 Mins</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="imgs/filmposters/saigontrongconmua.jpg" alt="SAI GON IN THE RAIN">
+                    <span class="moviegrade moviegrade16">C18</span>
+                    <dl class="movieshortinfo">
+                        <dt><a href="" class="moviename" title="SAI GON IN THE RAIN">SAI GON IN THE RAIN</a></dt>
+                        <dd><b>Genre:</b> Romance</dd>
+                        <dd><b>Running Time:</b> 118 Mins</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="imgs/filmposters/khongphailucchet.jpg" alt="NO TIME TO DIE">
+                    <dl class="movieshortinfo">
+                        <dt><a href="" class="moviename" title="NO TIME TO DIE">NO TIME TO DIE</a></dt>
+                        <dd><b>Genre:</b> Action</dd>
+                        <dd><b>Running Time:</b> 118 Mins</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="imgs/filmposters/soul.jpg" alt="SOUL">
+                    <dl class="movieshortinfo">
+                        <dt><a href="" class="moviename" title="SOUL">SOUL</a></dt>
+                        <dd><b>Genre:</b> Animation</dd>
+                        <dd><b>Running Time:</b> 118 Mins</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="imgs/filmposters/wonderwoman.gif" alt="WONDER WOMAN 1984">
+                    <dl class="movieshortinfo">
+                        <dt><a href="" class="moviename" title="WONDER WOMAN 1984">WONDER WOMAN 1984</a></dt>
+                        <dd><b>Genre:</b> Action, Fantasy</dd>
+                        <dd><b>Running Time:</b> 118 Mins</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <script src="movie.js">
+        </script>
     </main>
     <footer>
         <div class="introduce">
