@@ -68,6 +68,7 @@ dd {
     width: 228px;
     text-align: center;
     margin-block-start: 0cm;
+    margin-inline-start: 15px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -78,6 +79,11 @@ dd {
     text-overflow: ellipsis;
     font-weight: bold;
     font-size: 17px;
+}
+
+.moviegenre {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 main {
@@ -99,4 +105,37 @@ main {
 
 .moviegrade16 {
     background: url(../imgs/gradelogo/grade16.png);
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.imagehover {
+    transition: .5s ease;
+    opacity: 0;
+    top: 200px;
+    left: 170px;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .imagehover {
+    opacity: 1;
+}
+
+.imghoverbutton {
+    width: 100px;
+    margin: 5px;
 }
